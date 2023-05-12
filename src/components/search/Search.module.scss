@@ -1,0 +1,27 @@
+@import "../../scss/variables";
+
+.root {
+  position: relative;
+  img {
+    position: absolute;
+    top: 0.7rem;
+    right: 0.5rem;
+    cursor: pointer;
+  }
+  margin-right: 0.5rem;
+  @media (max-width: 730px) {
+    opacity: 1;
+    margin-right: 0.5rem;
+  }
+}
+
+.input {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0.7rem 1rem;
+  width: 100px;
+  border-radius: 10px;
+  font-size: 1.6rem;
+  &:focus {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+  }
+}

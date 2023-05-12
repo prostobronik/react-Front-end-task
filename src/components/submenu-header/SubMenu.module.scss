@@ -1,0 +1,55 @@
+@import "../../scss/variables";
+.conteiner {
+  width: 176px;
+  height: 173px;
+  position: absolute;
+  z-index: 1;
+  background-color: $bg-white;
+  border: 1px solid $bg-line-gray;
+  margin-top: 1.9rem;
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    width: 136px;
+    height: 133px;
+    margin: 2rem;
+
+    a {
+      position: relative;
+      height: 13px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-style: normal;
+      font-weight: $fw-400;
+      font-size: 1.3rem;
+      margin-bottom: 1.7rem;
+
+      &:hover span {
+        color: $bg-gray-hover;
+        transition: all 0.3s ease;
+        transform: translate(8px, 0);
+      }
+      span {
+        transition: all 0.3s ease;
+      }
+
+      &:not(:last-child):before {
+        position: absolute;
+        top: 2rem;
+        width: 135px;
+        content: "";
+        border: 1px solid $bg-line-gray;
+      }
+
+      img {
+        height: 10px;
+      }
+    }
+  }
+  @media (max-width: 730px) {
+    margin-top: 0;
+    margin-left: 10rem;
+  }
+}

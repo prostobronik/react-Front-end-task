@@ -1,0 +1,27 @@
+@import "../../scss/variables";
+.conteiner {
+  position: sticky;
+  top: 0;
+  .menu_item {
+    height: 38px;
+    margin-right: 3.15rem;
+    float: left;
+    overflow: hidden;
+
+    &:hover .submenu {
+      display: block;
+    }
+
+    a {
+      font-weight: $fw-500;
+      font-size: 1.6rem;
+      line-height: 16px;
+      img {
+        margin-left: 0.5rem;
+      }
+    }
+    .submenu {
+      display: none;
+    }
+  }
+}

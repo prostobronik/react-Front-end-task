@@ -1,0 +1,71 @@
+@import "../../scss/variables";
+.container {
+  width: 360px;
+  height: 459px;
+  img {
+    margin-bottom: 1.6rem;
+  }
+
+  span {
+    display: block;
+    font-weight: $fw-700;
+    font-size: 1.3rem;
+    line-height: 13px;
+    color: $bg-red;
+    margin-bottom: 1.6rem;
+  }
+
+  h2 {
+    font-weight: $fw-700;
+    font-size: 2.4rem;
+    line-height: 30px;
+    color: $bg-black;
+    margin-bottom: 1.6rem;
+  }
+  div {
+    display: flex;
+
+    margin-bottom: 1.6rem;
+    h3 {
+      font-weight: $fw-500;
+      font-size: 1.2rem;
+      line-height: 12px;
+      &::after {
+        display: inline-block;
+        content: "";
+        width: 3px;
+        height: 3px;
+        background: #d7d7d7;
+        border-radius: 50%;
+        margin: 0 0.5rem 0.2rem 0.5rem;
+      }
+    }
+    data {
+      font-weight: $fw-400;
+      font-size: 1.2rem;
+      line-height: 12px;
+      color: #9b9b9b;
+      &::after {
+        display: inline-block;
+        content: "";
+        width: 3px;
+        height: 3px;
+        background: #d7d7d7;
+        border-radius: 50%;
+        margin: 0 0.5rem 0.2rem 0.5rem;
+      }
+    }
+    h4 {
+      font-weight: $fw-400;
+      font-size: 1.2rem;
+      line-height: 12px;
+      color: #9b9b9b;
+    }
+  }
+  p {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 20px;
+    color: $bg-gray-cart;
+  }
+}
